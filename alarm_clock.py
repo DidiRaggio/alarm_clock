@@ -151,9 +151,7 @@ class AlarmClock(object):
 		p.terminate()
 
 	def run(self):
-		# time.sleep(sleep_time)
-		print(self.sleep_time)
-		print(self.wav_list)
+		time.sleep(sleep_time)
 		for wav_filename in self.wav_list:
 			self.play_wav(wav_filename)
 
