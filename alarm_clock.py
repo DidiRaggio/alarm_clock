@@ -33,6 +33,7 @@ class AlarmClock(object):
 			print('Invalid input. Must be expressed in "hh:mm"')
 			alarm_set = raw_input("Set alarm time (hh:mm): ")
 
+		print("THE ALARM HAS BEEN SET! :)")
 		return alarm_set
 
 	def parse_alarm_time_str(self):
@@ -155,6 +156,6 @@ class AlarmClock(object):
 		print(self.wav_list)
 		for wav_filename in self.wav_list:
 			self.play_wav(wav_filename)
-			
+
 if __name__ == '__main__':
 	AlarmClock().run()
